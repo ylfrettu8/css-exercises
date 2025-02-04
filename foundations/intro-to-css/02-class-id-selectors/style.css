@@ -1,0 +1,16 @@
+.odd{
+    background-color: lightpink;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+#tu{
+    color: blue;
+    font-size: 36px;
+}
+.jackass,
+#for{
+    font-size: 24px;
+}
+#for{
+    background-color: rgb(144, 238, 144);
+    font-weight: bold;
+}
