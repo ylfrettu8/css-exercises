@@ -4,7 +4,9 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif; 
+  display: flex;
+  flex-direction:column;
 }
 
 img {
@@ -16,11 +18,64 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
+  margin: 10px;
   width: 400px;
 }
+
+.header{
+  display: flex;
+  justify-content: space-between;  
+  padding: 15px 20px;
+  margin-bottom: auto;
+  background-color:rgb(182, 134, 75);
+}
+
+.content{
+  align-items: center;
+  justify-content: center;
+  display: flexbox;
+  text-align: center; /* interesting sinergy between flexbox and text-align, i almost had it but the responsiveness to resizes wasnt there, real solution below.
+  its funny cos the solution moves the text at the min window with, but my solution moves the logo instead, XD its almost like a stalemate, i believe both options have merit
+  and most likely useful applications*/
+  padding: 1%;
+}
+
+/* Real solution
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; <- column and flex 1 making the dream team here and positioning the contents centered and responsive to resizes.
+  gap: 16px; <- Notice le gap, making it easier than adding margin to items.
+}
+*/
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  background-color: rgb(149, 180, 180);
+  padding: 15px 20px;
+  margin-top: auto;
+}
+
+ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: aqua;
+}
+/* The real solution wins overall, much simpler for this task. GG*/
