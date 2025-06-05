@@ -21,10 +21,23 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  gap 8px;
+  gap: 8px;  /* Adds space between children elements only*/
   display: flex;
 
 }
+
+  /*Margenes especificos, proporcionan coherencia al espacio horizontal entre elementos al contacto entre ul y .logo*/
+
+.left-links {
+  margin: 0 8px 0 0;
+
+}
+
+.right-links{
+  margin: 0 0 0 8px;
+
+}
+
 
 a {
   font-size: 22px;
@@ -32,6 +45,6 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
-  margin: auto 8px;
+
 }
 /*REMEMBER FLEX ONLY AFFECTS THE CONTAINER'S CHILDREN!!! NOT THE DESCENDANTS!!!*/
