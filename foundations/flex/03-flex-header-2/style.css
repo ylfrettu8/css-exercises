@@ -2,6 +2,12 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+/* Self Check
+69Everything is centered vertically inside the header.
+69There is 8px space between everything and the edge of the header.
+69Items are arranged horizontally as seen in the outcome image.
+69There is 16px between each item on both sides of the header.
+69flex is used to arrange everything. */
 body {
   margin: 0;
   background: #eee;
@@ -12,12 +18,15 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  padding: 0 8px;
+  justify-content:space-between; /*This shit is BLACK MAGIC BRO!!! Just get 2 divs and BLap'em!!!*/
 }
 
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
+  border-radius: 30%;
   width: 48px;
   height: 48px;
 }
@@ -45,4 +54,14 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.left, .right{
+  display: flex;
+  align-items: center;
+  gap: 16px;;
 }
